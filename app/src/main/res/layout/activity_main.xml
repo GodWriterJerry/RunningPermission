@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.runningpermission.MainActivity">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+    android:id="@+id/edit_call"
+    android:hint="在这里输入您所要拨打的电话"
+    android:layout_weight="5"
+    android:layout_width="0dp"
+    android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/make_call"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="拨打"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_smsnum"
+        android:hint="在这里输入收件人的电话号码"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/edit_sms"
+            android:hint="在这里输入短信内容"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="发送"/>
+
+    </LinearLayout>
+
+</LinearLayout>
